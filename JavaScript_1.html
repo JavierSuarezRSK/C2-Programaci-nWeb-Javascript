@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        console.log("HOLA, BIENVENIDO A LA APLICACIÓN EN CONSOLA");
+
+        let numeroRandom = Math.floor(Math.random() * 100);
+        console.log(numeroRandom);
+
+        let userNum = -1;
+        let intentos = 0;
+
+        do {
+
+            userNum = prompt("Introduce un número", 0);
+            console.log(userNum);
+            if (userNum > numeroRandom) {
+                console.log("Demasiado alto, vuelve a intentar...");
+            } else {
+                console.log("Demasiado bajo, vuelve a intentar...");
+            }
+            intentos++;
+
+        } while (userNum != numeroRandom);
+
+        console.log(intentos);
+
+    </script>
+</head>
+<body>
+
+    <h1> Abre la consola del navegador </h1>
+
+</body>
+</html>
